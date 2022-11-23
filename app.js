@@ -19,7 +19,7 @@ mongoose
     }
   );
 
-// app.use("/user")
+app.use("/user",require())
 app.listen(1414,()=>{
     console.log("Server Running");
 })
