@@ -19,7 +19,7 @@ mongoose
     }
   );
 
-app.use("/user",require())
+app.use("/user",require('./routes/user.route'))
 app.listen(1414,()=>{
     console.log("Server Running");
 })

@@ -8,11 +8,9 @@ const UserSchema=new Schema({
     },
     phone:{
         type:Number,
-        min:[10,"Phone number should be 10 digits"],
-        max:[10,"Phone number should be 10 digits"],
         required:true
     },
-    id:{
+    uid:{
         type:Number,
         required:true,
         unique: true,
