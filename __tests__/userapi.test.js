@@ -54,6 +54,17 @@ describe('user PUT request',()=>{
   })
   let res = await request(app).put('/user').send({name:"rao",uid:800})
   expect(res.statusCode).toEqual(400)
+  expect(JSON.parse(res.text)).toEqual({message:"User Id does not exist"})
+
+  })
+  it('With valid Data', async () => {
+    const res = await request(app).put('/user').send({
+        uid: 127,
+        name:"rao",
+        phone:9342607939
+      })
+    expect(res.statusCode).toEqual(200)
+    expect(JSON.parse(res.text).data.phone).toEqual(9342607939)
 
   })
 
