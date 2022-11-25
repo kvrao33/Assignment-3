@@ -1,9 +1,11 @@
 const express=require('express');
 const router=express.Router();
 const User=require('../models/user.schema')
+const {postDataValidation,validate,putDataValidation}=require("../middlewares/middleware")
 
 //User Register 
-router.post("/",async (req,res)=>{
+router.post("/",postDataValidation(),validate,async (req,res)=>{
+    console.log("in post user handler");
     let {name,phone,uid}=req.body;
     if(name&&phone&&uid){
         let data = await User.findOne({ uid }).exec();//checking user id is exist or not
@@ -30,9 +32,9 @@ router.post("/",async (req,res)=>{
 })
 
 //Edit user data
-router.put("/",async(req,res)=>{
+router.put("/",putDataValidation(),validate,async(req,res)=>{
     let {uid}=req.body;
-    if(uid){
+    
         let data = await User.findOne({ uid }).exec();//checking user id is exist or not
 if(data){
 
@@ -41,12 +43,11 @@ console.log(data);
 res.status(200).send({message:"Data is updated",data})
    }).catch((err)=>{
     console.log(err)
-    res.status(400).send({menubar:"Error"})
+    res.status(400).send({message:"Error"})
    })
+}else{
+    res.status(400).send({message:"User Id does not exist"})
 }
-    }else{
-        res.status(400).send({message:"User ID can't be empty "})
-    } 
 })
 
 //to get all the users
