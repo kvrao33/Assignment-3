@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const app=express()
 app.use(express.json())
 
+//Mongodb connection 
 mongoose.Promise = global.Promise;
 mongoose
   .connect(process.env.URI, {
@@ -19,7 +20,7 @@ mongoose
     }
   );
 
-app.use("/user",require('./routes/user.route'))
+app.use("/user",require('./routes/user.route'))//User routes endpoints
 module.exports= app.listen(1414,()=>{
     console.log("Server Running");
 })
