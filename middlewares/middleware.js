@@ -2,7 +2,6 @@
 const { body, validationResult } = require('express-validator');
 
 let postDataValidation=()=>{
-    console.log('log in post middleware');
     return [
         body('uid').notEmpty().isNumeric().withMessage("User Id should be correct"),
         body("name").isLength({min:3,max:50}).withMessage("Name should be correct"),
@@ -10,7 +9,6 @@ let postDataValidation=()=>{
 }
 
 let putDataValidation=()=>{
-    console.log('log in put middleware');
     return [
         body('uid').notEmpty().isNumeric().withMessage("User Id should be correct"),
         body("phone").isMobilePhone('en-IN').withMessage("Number Should be correct").optional(),
