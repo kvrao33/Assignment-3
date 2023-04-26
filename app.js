@@ -7,7 +7,7 @@ app.use(express.json())
 //Mongodb connection 
 mongoose.Promise = global.Promise;
 mongoose
-  .connect(mongodb+srv://KVRao:9342607939@cluster0.lh5zhqw.mongodb.net/?retryWrites=true&w=majority, {
+  .connect("mongodb+srv://KVRao:9342607939@cluster0.lh5zhqw.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
