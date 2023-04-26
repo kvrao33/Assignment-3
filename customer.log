@@ -7,3 +7,11 @@
 {"level":"error","message":"User ID is already exist","timestamp":"2022-11-28T08:44:48.390Z"}
 {"level":"info","message":"Data updated successfully","timestamp":"2022-11-28T08:44:58.010Z"}
 {"level":"error","message":",Number Should be correct,Name should be correct","timestamp":"2022-11-28T08:52:25.106Z"}
+{"level":"error","message":"Some error occurred in adding item","timestamp":"2023-04-26T09:03:43.768Z"}
+{"level":"error","message":"Some error occurred in adding item","timestamp":"2023-04-26T09:06:52.353Z"}
+{"level":"error","message":"Some error occurred in adding item ValidationError: discountAmount: Path `discountAmount` is required., amount: Path `amount` is required., image: Path `image` is required., type: Path `type` is required., name: Path `name` is required.","timestamp":"2023-04-26T09:07:13.857Z"}
+{"level":"error","message":"Some error occurred in adding item ValidationError: discountAmount: Path `discountAmount` is required., amount: Path `amount` is required., image: Path `image` is required., type: Path `type` is required., name: Path `name` is required.","timestamp":"2023-04-26T09:07:50.013Z"}
+{"level":"error","message":"Some error occurred in adding item ValidationError: image: Path `image` is required.","timestamp":"2023-04-26T09:09:52.142Z"}
+{"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:12:04.921Z"}
+{"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:12:46.765Z"}
+{"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:14:57.271Z"}
