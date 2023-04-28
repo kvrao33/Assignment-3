@@ -5,7 +5,7 @@ var jwt = require('jsonwebtoken');
 
 async function userLogin(req,callback){
     //checking user name and password is matching 
-    console.log(req.body);
+    console.log(req.body," : Login Service");
     let {password,email}=req.body
     let response = await User.findOne({email}).exec();
     if(response){
