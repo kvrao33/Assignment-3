@@ -11,10 +11,14 @@ const {addToCart,deleteToCart} = require('../services/user Services/userCart.ser
 //User Login
 router.post("/login",loginDataValidation(),validate,async (req,res)=>{
  userLogin(req,(error,data)=>{
-    if(error)
-    res.status(error.statusCode).send(error);
-    else
-    res.status(data.statusCode).send(data)
+    if(error){
+        console.log("Login Success ");
+        res.status(error.statusCode).send(error);
+    }
+    else{
+console.log("Login Fail");
+        res.status(data.statusCode).send(data)
+    }
 
  })
 })
