@@ -1,11 +1,11 @@
 const express=require('express');
 const router=express.Router();
 const Items=require('../models/item.schema')
-const {postDataValidation,validate,putDataValidation}=require("../middlewares/middleware");
+const {postDataValidation,validate,itemInputValidation}=require("../middlewares/middleware");
 const {logger}=require('../controller/logger')
 
 //Create item POST method 
-router.post("/add",validate,async (req,res)=>{
+router.post("/add",itemInputValidation(),validate,async (req,res)=>{
 console.log("/add item");
          let item = new Items(req.body);//creating new item object using request body data
          //Saving the item data 
@@ -29,7 +29,7 @@ console.log("/add item");
 router.get("/",validate,async (req,res)=>{
     
                 Items.find().then((data)=>{
-                    res.status(200).send({message:"item fetch successfully",data})
+                    res.status(200).send({message:"item created successfully",data})
                 })
     })
 

@@ -9,3 +9,12 @@
 {"level":"error","message":"Some error occurred in adding item ValidationError: discountAmount: Path `discountAmount` is required., amount: Path `amount` is required., image: Path `image` is required., type: Path `type` is required., name: Path `name` is required.","timestamp":"2023-04-26T09:07:13.858Z"}
 {"level":"error","message":"Some error occurred in adding item ValidationError: discountAmount: Path `discountAmount` is required., amount: Path `amount` is required., image: Path `image` is required., type: Path `type` is required., name: Path `name` is required.","timestamp":"2023-04-26T09:07:50.014Z"}
 {"level":"error","message":"Some error occurred in adding item ValidationError: image: Path `image` is required.","timestamp":"2023-04-26T09:09:52.142Z"}
+{"level":"error","message":",Item name should be correct,description should be correct","timestamp":"2023-04-26T09:51:21.864Z"}
+{"level":"error","message":",description should be correct","timestamp":"2023-04-26T09:51:52.184Z"}
+{"level":"error","message":",image Url should be correct","timestamp":"2023-04-26T09:54:13.207Z"}
+{"level":"error","message":",Amount should be correct and Numeric","timestamp":"2023-04-26T09:54:31.874Z"}
+{"level":"error","message":",Email should be correct,Password should be correct","timestamp":"2023-04-27T07:08:51.829Z"}
+{"level":"error","message":",Email should be correct,Password should be correct","timestamp":"2023-04-27T07:10:26.251Z"}
+{"level":"error","message":",Password should be correct","timestamp":"2023-04-27T07:11:18.727Z"}
+{"level":"error","message":",Email should be correct","timestamp":"2023-04-27T07:12:17.455Z"}
+{"level":"error","message":",Email should be correct","timestamp":"2023-04-27T07:33:46.095Z"}

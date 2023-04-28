@@ -15,3 +15,14 @@
 {"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:12:04.921Z"}
 {"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:12:46.765Z"}
 {"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:14:57.271Z"}
+{"level":"error","message":",Item name should be correct,description should be correct","timestamp":"2023-04-26T09:51:21.863Z"}
+{"level":"error","message":",description should be correct","timestamp":"2023-04-26T09:51:52.183Z"}
+{"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:54:02.344Z"}
+{"level":"error","message":",image Url should be correct","timestamp":"2023-04-26T09:54:13.207Z"}
+{"level":"info","message":"item created successfully","timestamp":"2023-04-26T09:54:23.845Z"}
+{"level":"error","message":",Amount should be correct and Numeric","timestamp":"2023-04-26T09:54:31.874Z"}
+{"level":"error","message":",Email should be correct,Password should be correct","timestamp":"2023-04-27T07:08:51.829Z"}
+{"level":"error","message":",Email should be correct,Password should be correct","timestamp":"2023-04-27T07:10:26.251Z"}
+{"level":"error","message":",Password should be correct","timestamp":"2023-04-27T07:11:18.727Z"}
+{"level":"error","message":",Email should be correct","timestamp":"2023-04-27T07:12:17.455Z"}
+{"level":"error","message":",Email should be correct","timestamp":"2023-04-27T07:33:46.095Z"}

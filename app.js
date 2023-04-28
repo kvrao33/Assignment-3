@@ -1,7 +1,10 @@
 require('dotenv').config()
 const express=require('express')
+const { unless } = require("express-unless");
 const mongoose = require("mongoose");
+const { authenticateToken } = require('./middlewares/verifyToken');
 const app=express()
+authenticateToken.unless=unless;
 app.use(express.json())
 
 
@@ -20,6 +23,16 @@ mongoose
       console.log("Database can't be connected: " + error);
     }
   );
+
+  // Verify JWT token
+  app.use(
+    authenticateToken.unless({
+      path: [
+        { url: "/user/login", methods: ["POST"] },
+      { url: "/user/signup", methods: ["POST"] }],
+    })
+  );
+
 app.post("/",(req,res)=>{
   console.log(req.body);
   res.status(200).send("Ping")
