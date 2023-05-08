@@ -11,7 +11,7 @@ const orderItemSchema=new Schema({
     },
     orderDate:{
         type:String,
-        default:new Date()
+        default:new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'})
     }
 })
 orderItemSchema.set("toJSON", {

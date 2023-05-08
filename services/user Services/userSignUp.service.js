@@ -19,7 +19,7 @@ async function userSignUp(req,callback){
          }).catch((err)=>{
             if(err){
                 return callback({message:"Internal server error while signing up",statusCode:503,error:true},null);
-            }
+            }   
          })
         }
 }

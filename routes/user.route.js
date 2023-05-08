@@ -27,10 +27,14 @@ console.log("Login Fail");
 router.post("/signup",signUpDataValidation(),validate,async(req,res)=>{
     console.log("Signup route");
     userSignUp(req,(error,data)=>{
-        if(error)
-        res.status(error.statusCode).send(error);
-        else
-        res.status(data.statusCode).send(data)
+        if(error){
+            console.log("Login Fail");
+            res.status(error.statusCode).send(error);
+        }
+        else{
+            console.log("Login Success ");
+            res.status(data.statusCode).send(data)
+        }
     })
 })
 
